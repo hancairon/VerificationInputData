@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Input Data Validation</title>
+	<link rel="stylesheet" href="display.css">
+	<script src="script.js"></script>
+</head>
+<body>
+	<div class="container">
+		<h1>Input Data Validation</h1>
+		<hr>
+		<!-- Email Address, Password and Re-Type Password and calling validate function -->
+		<form name="form" action="" onsubmit="return validate();" method="get">
+			<input type="hidden" name="" value="">
+
+			<!-- Email Address -->
+			<div class="form-group">
+				<label for="email">Email Address</label>
+				<input type="text" class="form-control" name="email" id="email" placeholder="Email">
+			</div>
+
+			<!-- Password -->
+			<div class="form-group">
+				<label for="pass">Password</label>
+				<input type="password" class="form-control" name="pass" id="pass" placeholder="Password">
+			</div>
+
+			<!-- Re-Password -->
+			<div class="form-group">
+				<label for="pass2">Re-Type Password</label>
+				<input type="password" class="form-control" name="pass2" id="pass2" placeholder="Re-Password">
+				<p id="message"></p>
+			</div>
+
+			<!-- Agreement term and condition -->
+			<div class="form-check">
+				<input type="checkbox" class="form-check-input" name="terms" id="terms">
+				<label class="form-check-label" for="terms">I agree to the terms and conditions</label>
+			</div>
+
+			<!-- Submit and reset buttons -->
+			<button type="submit" class="btn">Sign-Up</button>
+			<button type="reset" class="btn">Reset</button>
+		</form>
+	</div>
+</body>
+</html>
